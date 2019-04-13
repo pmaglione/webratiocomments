@@ -1,0 +1,40 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-65" gr:y="205" id="sv1#page3" name="CreateProduct">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv1#page3#enu2" name="Product" entity="ent2" linkOrder="sv1#page3#enu2#ln1" fieldOrder="sv1#page3#enu2#fld1 sv1#page3#enu2#fld2">
+      <Link id="sv1#page3#enu2#ln1" name="Save product" to="sv1#cru1" type="normal" validate="true">
+        <LinkParameter id="sv1#page3#enu2#ln1#par1" name="category_category" source="sv1#page3#enu2#fld2" target="sv1#cru1.ent2#att7"/>
+        <LinkParameter id="sv1#page3#enu2#ln1#par2" name="name_name" source="sv1#page3#enu2#fld1" target="sv1#cru1.ent2#att4"/>
+        <LinkParameter id="sv1#page3#enu2#ln1#par3" name="Key [oid]_oid" source="key.ent2#att3" target="sv1#cru1.ent2#att3"/>
+        <LinkParameter id="sv1#page3#enu2#ln1#par4" name="Product Object_Product Object" source="entityBean" target="sv1#cru1.entityBeans"/>
+        <LinkParameter id="sv1#page3#enu2#ln1#par13" name="category_PASSING" source="sv1#page3#enu2#fld2" passing="true"/>
+        <LinkParameter id="sv1#page3#enu2#ln1#par14" name="Key [oid]_PASSING" source="key.ent2#att3" passing="true"/>
+        <LinkParameter id="sv1#page3#enu2#ln1#par15" name="name_PASSING" source="sv1#page3#enu2#fld1" passing="true"/>
+        <LinkParameter id="sv1#page3#enu2#ln1#par16" name="Product Object_PASSING" source="entityBean" passing="true"/>
+      </Link>
+      <Field id="sv1#page3#enu2#fld2" name="category" type="string" modifiable="true"/>
+      <Field id="sv1#page3#enu2#fld1" name="name" type="string" modifiable="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page3#enu2">
+          <layout:Link link="sv1#page3#enu2#ln1"/>
+          <layout:Field field="sv1#page3#enu2#fld1"/>
+          <layout:Field field="sv1#page3#enu2#fld2"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

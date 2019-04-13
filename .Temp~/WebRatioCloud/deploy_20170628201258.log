@@ -1,0 +1,8 @@
+[2017-06-28 20:12:58] Uploading application on server [54.171.175.195]
+[2017-06-28 20:12:58] Computing changes...
+[2017-06-28 20:13:01] Found 2 file(s) changed
+[2017-06-28 20:13:01] --------------------------------------------
+[2017-06-28 20:13:01] UPDATE                  /WEB-INF/descr/ln9.descr
+[2017-06-28 20:13:01] REMOTE_ADD              /WEB-INF/descr/_redeploy
+[2017-06-28 20:13:01] --------------------------------------------
+[2017-06-28 20:13:01] Uploading changes (975 bytes)

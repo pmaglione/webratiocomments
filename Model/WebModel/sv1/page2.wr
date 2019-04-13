@@ -1,0 +1,56 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="215" gr:y="205" id="sv1#page2" name="CreateComment" landmark="true">
+  <ContentUnits>
+    <EntryUnit gr:x="175" gr:y="10" id="sv1#page2#enu1" name="Comment" linkOrder="sv1#page2#enu1#ln2" fieldOrder="sv1#page2#enu1#fld3 sv1#page2#enu1#sfld2" entity="ent1">
+      <Link id="sv1#page2#enu1#ln2" name="Save comment" to="sv1#cru2" type="normal" validate="true">
+        <LinkParameter id="sv1#page2#enu1#ln2#par5" name="Comment Object_Comment Object" source="entityBean" target="sv1#cru2.entityBeans"/>
+        <LinkParameter id="sv1#page2#enu1#ln2#par6" name="Content_content" source="sv1#page2#enu1#fld3" target="sv1#cru2.ent1#att2"/>
+        <LinkParameter id="sv1#page2#enu1#ln2#par7" name="Key [oid]_oid" source="key.ent1#att1" target="sv1#cru2.ent1#att1"/>
+        <LinkParameter id="sv1#page2#enu1#ln2#par8" name="CommentToProduct_Product.oid(CommentToProduct)" source="sv1#page2#enu1#sfld2" target="sv1#cru2.rel2#role4.ent2#att3"/>
+      </Link>
+      <Field id="sv1#page2#enu1#fld3" name="Content" type="string" modifiable="true" attribute="ent1#att2"/>
+      <SelectionField id="sv1#page2#enu1#sfld2" name="Product" type="integer" modifiable="true" attribute="ent1#att1" role="rel2#role4"/>
+    </EntryUnit>
+    <SelectorUnit gr:x="0" gr:y="0" id="sv1#page2#seu3" name="Selector3" entity="ent2">
+      <Link id="sv1#page2#seu3#ln8" name="Flow8" to="sv1#page2#enu1" type="transport" validate="true">
+        <LinkParameter id="sv1#page2#seu3#ln8#par42" name="name_Product [label]" source="ent2#att4Array" target="sv1#page2#enu1#sfld2_label"/>
+        <LinkParameter id="sv1#page2#seu3#ln8#par43" name="oid_Product [output]" source="ent2#att3Array" target="sv1#page2#enu1#sfld2_output"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page2#enu1">
+          <layout:Link link="sv1#page2#enu1#ln2"/>
+          <layout:Field field="sv1#page2#enu1#fld3"/>
+          <layout:Field field="sv1#page2#enu1#sfld2"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

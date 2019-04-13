@@ -1,0 +1,13 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1" name="CommentService" homePage="sv1#page3" linkVisibilityPolicy="always" landmarks="sv1#page2" layout:frameLayout="None" layout:style="WebRatio">
+  <OperationUnits>
+    <CreateUnit gr:x="155" gr:y="480" id="sv1#cru1" name="CreateProduct" entity="ent2" skipBlankRecords="true">
+      <OKLink id="sv1#cru1#oln1" name="OKFlow1" to="sv1#page2" automaticCoupling="true"/>
+      <KOLink id="sv1#cru1#kln1" name="KOFlow1" to="sv1#page3" automaticCoupling="true"/>
+    </CreateUnit>
+    <CreateUnit gr:x="385" gr:y="440" id="sv1#cru2" name="CreateComment" entity="ent1">
+      <OKLink id="sv1#cru2#oln7" name="OKFlow7" to="sv1#page1">
+        <LinkParameter id="sv1#cru2#oln7#par26" name="name_PASSING_jsonGet" sourceLinkParameter="sv1#page1#enu3#ln9#par25" targetVariable="sv1#page1#var2"/>
+      </OKLink>
+    </CreateUnit>
+  </OperationUnits>
+</SiteView>

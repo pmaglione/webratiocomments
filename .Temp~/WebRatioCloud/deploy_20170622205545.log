@@ -1,0 +1,12 @@
+[2017-06-22 20:55:45] Uploading application on server [52.213.169.121]
+[2017-06-22 20:55:45] Computing changes...
+[2017-06-22 20:55:48] Found 6 file(s) changed
+[2017-06-22 20:55:48] --------------------------------------------
+[2017-06-22 20:55:48] UPDATE                  /WEB-INF/descr/cru1.descr
+[2017-06-22 20:55:48] UPDATE                  /WEB-INF/descr/oln3.descr
+[2017-06-22 20:55:48] UPDATE                  /WEB-INF/descr/page2.descr
+[2017-06-22 20:55:48] UPDATE                  /WEB-INF/descr/cru2.descr
+[2017-06-22 20:55:48] UPDATE                  /WEB-INF/descr/qu1.descr
+[2017-06-22 20:55:48] REMOTE_ADD              /WEB-INF/descr/_redeploy
+[2017-06-22 20:55:48] --------------------------------------------
+[2017-06-22 20:55:48] Uploading changes (8.8 KB)

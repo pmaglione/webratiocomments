@@ -1,0 +1,14 @@
+[2017-06-20 19:59:42] Uploading application on server [52.215.75.240]
+[2017-06-20 19:59:42] Computing changes...
+[2017-06-20 19:59:45] Found 8 file(s) changed
+[2017-06-20 19:59:45] --------------------------------------------
+[2017-06-20 19:59:45] UPDATE                  /WEB-INF/descr/cru1.descr
+[2017-06-20 19:59:45] UPDATE                  /WEB-INF/descr/ln4.descr
+[2017-06-20 19:59:45] UPDATE                  /WEB-INF/descr/page2.descr
+[2017-06-20 19:59:45] UPDATE                  /WEB-INF/descr/enu1.descr
+[2017-06-20 19:59:45] UPDATE                  /WEB-INF/descr/cru2.descr
+[2017-06-20 19:59:45] UPDATE                  /page2.jsp
+[2017-06-20 19:59:45] UPDATE                  /WEB-INF/descr/ln2.descr
+[2017-06-20 19:59:45] REMOTE_ADD              /WEB-INF/descr/_redeploy
+[2017-06-20 19:59:45] --------------------------------------------
+[2017-06-20 19:59:45] Uploading changes (20.1 KB)

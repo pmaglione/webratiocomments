@@ -1,0 +1,20 @@
+[2017-06-28 20:06:26] Uploading application on server [54.171.175.195]
+[2017-06-28 20:06:26] Computing changes...
+[2017-06-28 20:06:29] Found 12 file(s) changed
+[2017-06-28 20:06:29] --------------------------------------------
+[2017-06-28 20:06:29] UPDATE                  /WEB-INF/descr/page1.descr
+[2017-06-28 20:06:29] UPDATE                  /WEB-INF/descr/page2.descr
+[2017-06-28 20:06:29] ADD                     /WEB-INF/descr/ln7.descr
+[2017-06-28 20:06:29] ADD                     /WEB-INF/descr/ln9.descr
+[2017-06-28 20:06:29] UPDATE                  /WEB-INF/descr/cru2.descr
+[2017-06-28 20:06:29] ADD                     /WEB-INF/descr/enu3.descr
+[2017-06-28 20:06:29] UPDATE          RESTART /WEB-INF/conf/struts-config.xml
+[2017-06-28 20:06:29] UPDATE                  /WEB-INF/descr/_model.descr
+[2017-06-28 20:06:29] UPDATE                  /page1.jsp
+[2017-06-28 20:06:29] REMOTE_ADD              /WEB-INF/descr/kln2.descr
+[2017-06-28 20:06:29] DELETE                  /WEB-INF/descr/jio1.descr
+[2017-06-28 20:06:29] DELETE                  /WEB-INF/descr/seu4.descr
+[2017-06-28 20:06:29] --------------------------------------------
+[2017-06-28 20:06:29] Stopping application server
+[2017-06-28 20:06:40] Uploading changes (27.8 KB)
+[2017-06-28 20:06:42] Starting application server

@@ -1,0 +1,91 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="715" gr:y="180" id="sv1#page1" name="CommentsList" landmark="false" customDescriptor="false" ajaxEnabled="false" urlFragment="sv1#page1#seu2#su2#acond1" linkVisibilityPolicy="hide">
+  <ContentUnits>
+    <IndexUnit gr:x="0" gr:y="355" id="sv1#page1#inu1" name="Comments" entity="ent1" displayAttributes="ent1#att1 ent1#att2">
+      <Selector id="sv1#page1#inu1#su4" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#page1#inu1#su4#rcond1" name="WhereBelongsToProduct" role="rel2#role3" predicate="in" implied="false"/>
+      </Selector>
+    </IndexUnit>
+    <SelectorUnit gr:x="15" gr:y="155" id="sv1#page1#seu2" name="SelectProduct" entity="ent2" distinctAttributes="ent2#att4 ent2#att7">
+      <Selector id="sv1#page1#seu2#su2" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#page1#seu2#su2#acond1" name="ProductNameCondition" predicate="contains" booleanOperator="or" implied="true" attributes="ent2#att4"/>
+        <AttributesCondition id="sv1#page1#seu2#su2#acond4" name="ProductCategoryCondition" predicate="contains" booleanOperator="or" implied="true" attributes="ent2#att7"/>
+      </Selector>
+      <Link id="sv1#page1#seu2#ln6" name="Flow6" to="sv1#page1#inu1" type="transport" validate="true">
+        <LinkParameter id="sv1#page1#seu2#ln6#par10" name="oid_WhereBelongsToProduct [oid]" source="ent2#att3Array" target="sv1#page1#inu1#su4#rcond1.ent2#att3"/>
+      </Link>
+      <Link id="sv1#page1#seu2#ln7" name="Flow7" to="sv1#page1#enu3" type="transport" validate="true">
+        <LinkParameter id="sv1#page1#seu2#ln7#par18" name="oid_PASSING" source="ent2#att3Array" passing="true"/>
+        <LinkParameter id="sv1#page1#seu2#ln7#par24" name="name_PASSING" source="ent2#att4Array" passing="true"/>
+        <LinkParameter id="sv1#page1#seu2#ln7#par27" name="category_PASSING" source="ent2#att7Array" passing="true"/>
+      </Link>
+    </SelectorUnit>
+    <EntryUnit gr:x="0" gr:y="0" id="sv1#page1#enu3" name="New Comment" entity="ent1" linkOrder="sv1#page1#enu3#ln9">
+      <Field id="sv1#page1#enu3#fld4" name="Comment" type="text" modifiable="true" hidden="false" attribute="ent1#att2" contentType="text/plain"/>
+      <Field id="sv1#page1#enu3#fld5" name="Product" type="string" modifiable="true" hidden="true" contentType="text/plain"/>
+      <Link id="sv1#page1#enu3#ln9" name="Save comment" to="sv1#cru2" type="normal" validate="true">
+        <LinkParameter id="sv1#page1#enu3#ln9#par19" name="Comment Object_Comment Object" source="entityBean" target="sv1#cru2.entityBeans"/>
+        <LinkParameter id="sv1#page1#enu3#ln9#par20" name="Comment_content" source="sv1#page1#enu3#fld4" target="sv1#cru2.ent1#att2"/>
+        <LinkParameter id="sv1#page1#enu3#ln9#par21" name="oid_PASSING_Product.oid(CommentToProduct)" sourceLinkParameter="sv1#page1#seu2#ln7#par18" target="sv1#cru2.rel2#role4.ent2#att3"/>
+        <LinkParameter id="sv1#page1#enu3#ln9#par22" name="Key [oid]_oid" source="key.ent1#att1" target="sv1#cru2.ent1#att1"/>
+        <LinkParameter id="sv1#page1#enu3#ln9#par23" name="oid_PASSING" sourceLinkParameter="sv1#page1#seu2#ln7#par18" passing="true"/>
+        <LinkParameter id="sv1#page1#enu3#ln9#par25" name="name_PASSING" sourceLinkParameter="sv1#page1#seu2#ln7#par24" passing="true"/>
+        <LinkParameter id="sv1#page1#enu3#ln9#par28" name="category_PASSING" sourceLinkParameter="sv1#page1#seu2#ln7#par27" passing="true"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page1#inu1">
+          <layout:Attribute attribute="ent1#att1"/>
+          <layout:Attribute attribute="ent1#att2"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page1#enu3">
+          <layout:Field field="sv1#page1#enu3#fld4"/>
+          <layout:Link link="sv1#page1#enu3#ln9"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Variable id="sv1#page1#var2" name="jsonGet" type="string"/>
+</Page>
